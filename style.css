@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    font-family: 'Lucida Sans',Arial, Helvetica, sans-serif;
+    background-color: #00061a;
+    color: white;
+}
+
+#container{
+    margin : 15px 0 0 15px;
+}
+
+
+header h1 {
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5em;
+    font-style:oblique;
+
+}
+
+header p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline-block;
+    font-size: 12px;
+    margin-left:12px;
+    font-style: italic;
+    position: relative;
+    top: 11px;
+    right: 35px;
+}
+
+form{
+    margin: 10px 0 10px 0;
+    
+}
+
+#vocabolo{
+    width:70vw;
+    min-width: 1100px;
+    background-color:#002ab3;
+}
+
+select{
+    position:absolute;
+    top:45px;
+    left:300px;
+}
+
+#wordsfound{
+    margin: 10px 0 10px 10px;
+    font-variant: small-caps;
+    font-size: 13px;;
+}
+
+.wordcontainer{
+    /* border-top: 1px solid white; */
+    padding:10px;
+    width: 70vw;
+    min-width: 1100px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 4px ;
+}
+
+.wordhead{
+    display: inline-block;
+    padding: 0 30px 0 0;
+}
+
+.word{
+    font-size:25px;
+    font-weight: bold;
+    margin-bottom: 15px;;
+}
+
+.pos{
+    font-size: 12px;
+    font-style: italic;
+    
+}
+
+.phonetics{
+    font-size: 12px;
+
+}
+
+.wordbody{
+    margin: 10px 0 10px 20px;
+}
+
+.def{
+    font-size: 19px;
+}
+
+.def::before{
+    content: '-';
+}
+
+.syn{
+    font-size:12px;
+}
+
+.example{
+    font-style: italic;
+    font-size:14px;
+    text-align: right;
+}
+
+
+footer{
+    
+    font-size:11px;
+    text-align: right;
+    position: fixed;
+    bottom: 50px;
+    left:77vw;
+
+}
