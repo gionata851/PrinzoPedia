@@ -5,6 +5,7 @@ var lang = '';
 var vocabolo = '';
 var definitionObject;
 var mainsection;
+var searchform;
 
 window.onload = function()
 			{
@@ -14,6 +15,7 @@ window.onload = function()
 
 /* funzione di ricerca */
 function ricerca(){
+    searchform = document.querySelector('#searchform');
     mainsection = document.querySelector('main');
     mainsection.innerHTML = '';
     lang = document.spedizione_vocabolo.lang.value;
@@ -55,10 +57,10 @@ function ricerca(){
             wordsfound.setAttribute('class','wordsfound');
             if(definitionObject.length > 1)
                 wordsfound.innerText = `${definitionObject.length} words found`;
-            mainsection.appendChild(wordsfound);
+            searchform.appendChild(wordsfound);
             
             definitionObject.forEach((wordfound) =>{
-                console.log(wordfound);
+                /* console.log(wordfound); */
                 let wordcontainer = document.createElement('div');
                 wordcontainer.setAttribute('class','wordcontainer');
                 mainsection.appendChild(wordcontainer);

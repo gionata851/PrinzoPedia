@@ -3,31 +3,47 @@
     margin:0;
     font-family: 'Lucida Sans',Arial, Helvetica, sans-serif;
     background-color: #00061a;
+    /* background-color: #00061a20; */
     color: white;
 }
 
-#container{
-    margin : 15px 0 0 15px;
+html{
+    font-size: 16px;
 }
 
+#container{
+    margin : 0 0 0 15px;
+}
+
+#stiky{
+    position: sticky;
+    padding: 15px 0;
+    top: 0;
+}
 
 header h1 {
     display: inline-block;
     font-family: 'Oswald', sans-serif;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-style:oblique;
 
+}
+
+#container {
+
+    width: 75vw;
 }
 
 header p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: inline-block;
-    font-size: 12px;
+    font-size: 0.75rem;
     margin-left:12px;
     font-style: italic;
     position: relative;
     top: 11px;
     right: 35px;
+    white-space: nowrap;
 }
 
 form{
@@ -36,9 +52,10 @@ form{
 }
 
 #vocabolo{
-    width:70vw;
-    min-width: 1100px;
+    width:55vw;
+    /* min-width: 1100px; */
     background-color:#002ab3;
+    font-size: 1.2rem;
 }
 
 select{
@@ -50,14 +67,15 @@ select{
 #wordsfound{
     margin: 10px 0 10px 10px;
     font-variant: small-caps;
-    font-size: 13px;;
+    font-size: .77rem;
 }
 
 .wordcontainer{
     /* border-top: 1px solid white; */
     padding:10px;
-    width: 70vw;
-    min-width: 1100px;
+    width: 75vw;
+    /* min-width: 1100px; */
+    min-width: 390px;
     margin-bottom: 20px;
     box-shadow: 1px 1px 4px ;
 }
@@ -68,19 +86,19 @@ select{
 }
 
 .word{
-    font-size:25px;
+    font-size:1.6rem;
     font-weight: bold;
     margin-bottom: 15px;;
 }
 
 .pos{
-    font-size: 12px;
+    font-size: .75rem;
     font-style: italic;
     
 }
 
 .phonetics{
-    font-size: 12px;
+    font-size: .75rem;
 
 }
 
@@ -89,7 +107,7 @@ select{
 }
 
 .def{
-    font-size: 19px;
+    font-size: 1.20rem;
 }
 
 .def::before{
@@ -97,12 +115,12 @@ select{
 }
 
 .syn{
-    font-size:12px;
+    font-size: 0.75rem;
 }
 
 .example{
     font-style: italic;
-    font-size:14px;
+    font-size: .875rem;
     text-align: right;
 }
 
@@ -110,9 +128,31 @@ select{
 footer{
     
     font-size:11px;
-    text-align: right;
+    text-align: left;
     position: fixed;
-    bottom: 50px;
-    left:77vw;
+    max-width: 160px;
+    min-width: 105px;
+    bottom: 6vh;
+    right: 6vw;
+    /* left: 70vw; */
+    
 
+}
+
+@media screen and (max-width : 900px) {
+
+    html{
+        font-size: 21px;
+    }
+
+    header p {
+        position: absolute;
+        top: 80px;
+        left: 125px;
+    }
+
+    footer{
+        left: 81vw;
+    }
+    
 }

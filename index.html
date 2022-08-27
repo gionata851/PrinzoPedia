@@ -7,8 +7,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>PrinzoPedia by Prinzo Digital Industries</title>
-        <meta name="description" content="One-language Dictionary">
+        <title>PrinzoPedia Smart Dictionary</title>
+        <meta name="description" content="One-language English Dictionary">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
@@ -22,33 +22,36 @@
         
         <div id="container">
 
-            <header>
-                <h1>PrinzoPedia</h1> 
-                <p>smart dictionary</p>
-            </header>
+            <div id="stiky">
+                <header>
+                    <h1>PrinzoPedia</h1> 
+                    <p>smart dictionary</p>
+                </header>
+        
+                <section id="searchform">
+                    <form method="GET" action="" name="spedizione_vocabolo">
+                        <input type="text" id="vocabolo" name="vocabolo" placeholder="insert your word here..." >
+                        <input type="button" value="search" onclick="ricerca()">
+                        <select name="lang" id="lang">
+                            <option value="en_US">english(USA)</option>
+                            <!-- <option value="hi">हिन्दी</option> -->
+                            <!-- <option value="es">español</option> -->
+                            <!-- <option value="fr">française</option> -->
+                            <!-- <option value="ja">日本語</option> -->
+                            <!-- <option value="ru">русский язык</option>  -->
+                            <!-- <option value="en_GB">english(UK)</option> -->
+                            <!-- <option value="de">deutsch</option> -->
+                            <!-- <option value="it">italiano</option> -->
+                            <!-- <option value="ko">한국어/韓國語</option> -->
+                            <!-- <option value="pt_BR">português(BR)</option> -->
+                            <!-- <option value="ar">الْعَرَبيّة</option> -->
+                            <!-- <option value="tr">Türkçe</option>  -->
     
-            <section id="searchform">
-                <form method="GET" action="" name="spedizione_vocabolo">
-                    <input type="text" id="vocabolo" name="vocabolo" placeholder="insert your word here..." >
-                    <input type="button" value="search" onclick="ricerca()">
-                    <select name="lang" id="lang">
-                        <option value="en_US">english(USA)</option>
-                        <!-- <option value="hi">हिन्दी</option> -->
-                        <!-- <option value="es">español</option> -->
-                        <!-- <option value="fr">française</option> -->
-                        <!-- <option value="ja">日本語</option> -->
-                        <!-- <option value="ru">русский язык</option>  -->
-                        <!-- <option value="en_GB">english(UK)</option> -->
-                        <!-- <option value="de">deutsch</option> -->
-                        <!-- <option value="it">italiano</option> -->
-                        <!-- <option value="ko">한국어/韓國語</option> -->
-                        <!-- <option value="pt_BR">português(BR)</option> -->
-                        <!-- <option value="ar">الْعَرَبيّة</option> -->
-                        <!-- <option value="tr">Türkçe</option>  -->
+                        </select>
+                    </form>
+                </section>
+            </div>
 
-                    </select>
-                </form>
-            </section>
             
             <main>
                 <!-- <div id="wordsfound"></div> -->
@@ -67,8 +70,8 @@
 
         </div>
         <footer>
-            Developed by Gionata Prinzo - Prinzo Digital Industries <br>
-            Database by dictionaryapi.dev and lexico.com<br>
+            Developed by Gionata851 <br><br>
+            Database by dictionaryapi.dev and lexico.com<br><br>
             A special thank to Eduonix and Boolean Careers
         </footer>
 
