@@ -19,7 +19,11 @@ function ricerca(){
     lang = document.spedizione_vocabolo.lang.value;
     vocabolo = document.spedizione_vocabolo.vocabolo.value.toLowerCase().replace(/ /g, '');
     // console.log(vocabolo);
+    if(vocabolo === ''){
+        return;
+    }
     var ricerca = new Promise ((resolve,reject) => {
+
         //let risposta;
         let req = new XMLHttpRequest();
         req.open('GET',`${serverurl}${lang}/${vocabolo}`);
@@ -53,7 +57,8 @@ function ricerca(){
                 wordsfound.innerText = `${definitionObject.length} words found`;
             mainsection.appendChild(wordsfound);
             
-            definitionObject.map((wordfound) =>{
+            definitionObject.forEach((wordfound) =>{
+                console.log(wordfound);
                 let wordcontainer = document.createElement('div');
                 wordcontainer.setAttribute('class','wordcontainer');
                 mainsection.appendChild(wordcontainer);
@@ -62,8 +67,9 @@ function ricerca(){
                 word.setAttribute('class','wordhead word');
                 word.innerText = wordfound.word;
                 wordcontainer.appendChild(word);
-
-                if(wordfound.phonetics[0].text && wordfound.phonetics[0].text != false){
+                //console.log("cond 1: " + wordfound.phonetics[0].text ? "exists" : "FALSE");
+                //console.log("cond 2: " + wordfound.phonetics.length);
+                if(wordfound.phonetics.length != 0){
 
                     let phonetics = document.createElement('div');
                     phonetics.setAttribute('class','wordhead phonetics');
