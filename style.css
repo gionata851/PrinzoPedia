@@ -11,13 +11,11 @@ html{
     font-size: 16px;
 }
 
-#container{
-    margin : 0 0 0 15px;
-}
 
 #stiky{
+    
     position: sticky;
-    padding: 15px 0;
+    padding: 15px 10px;
     top: 0;
 }
 
@@ -26,12 +24,13 @@ header h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 2.5rem;
     font-style:oblique;
-
+    
 }
 
 #container {
-
-    width: 75vw;
+    
+    margin : 0;
+    width: 90vw;
 }
 
 header p {
@@ -152,7 +151,7 @@ footer{
     }
 
     footer{
-        left: 81vw;
+        display:none;
     }
     
 }
